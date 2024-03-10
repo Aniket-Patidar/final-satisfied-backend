@@ -16,13 +16,14 @@ app.use(fileupload({
 	useTempFiles: true
 }));
 
+
 // Express-Session , Cookie-parser
 const cookieparser = require('cookie-parser');
 app.use(cookieparser());
 
 
 app.use(cors({
-	origin: "frontend-job.vercel.app",
+	origin: "https://frontend-job.vercel.app/",
 	credentials: true,
 	optionsSuccessStatus: 200 // Address potential preflight request issues
 }));
