@@ -23,9 +23,8 @@ app.use(cookieparser());
 
 
 app.use(cors({
-	origin: "*",
-	credentials: true,
-	optionsSuccessStatus: 200 // Address potential preflight request issues
+  origin: 'https://frontend-job.vercel.app',
+  credentials: true // Allow credentials (cookies, authorization headers, etc.)
 }));
 
 //logger
