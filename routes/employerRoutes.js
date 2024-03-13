@@ -56,7 +56,7 @@ router.post('/job/readall', isAuthenticated, readAllJob);
 // POST /employer/job/readsingle/:id
 router.post('/job/readsingle/:id', isAuthenticated, readSingleJob);
 
-router.post('/job/applicationstatus',isAuthenticated,applicationsStatus)
+router.post('/job/applicationstatus', isAuthenticated, applicationsStatus)
 /* Todo */
 
 // POST /employer/send-mail

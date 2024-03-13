@@ -23,8 +23,8 @@ app.use(cookieparser());
 
 
 app.use(cors({
-  origin: 'https://frontend-job.vercel.app',
-  credentials: true // Allow credentials (cookies, authorization headers, etc.)
+	origin:"*" ,//"http://localhost:3000",
+	credentials: true // Allow credentials (cookies, authorization headers, etc.)
 }));
 
 //logger
@@ -40,7 +40,7 @@ app.use(
 	session({
 		resave: true,
 		saveUninitialized: true,
-		secret: process.env.EXPRESS_SESSION_SECRET,
+		secret: process.env.EXPRESS_SESSION_SECRET,	
 	})
 );
 

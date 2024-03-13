@@ -18,7 +18,6 @@ const jobModel = mongoose.Schema(
 			type: String,
 			emum:["0-1","1-2","2-5","5-10"],
 		},
-
 	},
 	{ timestamps: true }
 );

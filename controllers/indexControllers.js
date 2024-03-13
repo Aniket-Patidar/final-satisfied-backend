@@ -333,6 +333,7 @@ exports.AllJobs = catchAsyncError(async (req, res, next) => {
 
         const totalCount = await Job.countDocuments(queryObj);
         const totalPages = Math.ceil(totalCount / limit);
+		 	  		
 		// console.log(jobs)
         res.status(200).json({ success: true, totalPages, currentPage: page, jobs, totalCount });
     } catch (error) {
